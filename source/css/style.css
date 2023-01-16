@@ -314,6 +314,10 @@ template {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 @font-face {
   font-family: "Oswald";
   font-style: normal;
@@ -329,6 +333,26 @@ template {
   font-display: swap;
 }
 .page {
+  height: 100%;
   font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  color: #444444;
+  background-color: #FFFFFF;
+}
+.page__header {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+.header {
+  background-color: #FFFFFF;
+  color: #000000;
 }
 /*# sourceMappingURL=style.css.map */
