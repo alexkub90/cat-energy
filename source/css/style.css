@@ -308,6 +308,13 @@ img {
   background-color: #ffffff;
   color: #000000;
 }
+.main__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
 .site-menu {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 500;
@@ -388,14 +395,51 @@ img {
   padding: 20px;
   background-color: #eaeaea;
 }
+.example__text {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #444444;
+}
+.example__list {
+  text-align: center;
+}
 .example__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 12px;
+  line-height: 100%;
+  color: #444444;
+  text-transform: lowercase;
 }
 .example__description {
   font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.example__addition {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+.cooperation__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+.cooperation__street {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
   color: #444444;
 }
 /*# sourceMappingURL=style.css.map */
