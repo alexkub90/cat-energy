@@ -302,12 +302,6 @@ img {
   min-height: 100%;
   background-color: #ffffff;
 }
-.header {
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  color: #000000;
-}
 .main__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -348,12 +342,15 @@ img {
 }
 .button {
   font-family: "Oswald", "Arial", sans-serif;
-  line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #68b738;
   border: none;
+}
+.button--secondary {
+  color: #444444;
+  background-color: #f2f2f2;
 }
 .programs__item {
   padding: 20px;
@@ -427,6 +424,9 @@ img {
   text-align: center;
   color: #000000;
 }
+.cooperation {
+  padding: 20px;
+}
 .cooperation__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -441,5 +441,97 @@ img {
   font-size: 14px;
   line-height: 20px;
   color: #444444;
+}
+.catalog-list {
+  padding: 20px;
+}
+.card__link {
+  text-decoration: none;
+}
+.card__heading {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #222222;
+}
+.card__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+.card__description {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+.show-all__header {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+  text-align: center;
+}
+.show-all__description {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  text-align: center;
+}
+.catalog-additional {
+  padding: 20px;
+}
+.catalog-additional__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
+.catalog-additional__list {
+  list-style: none;
+}
+.card-optional__header {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+}
+.card-optional__definition {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+.promo-gift {
+  padding: 40px;
+  background-image: url("../img/backgrounds/background-optional.jpg");
+}
+.promo-gift__descriptoin {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+.footer {
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+.social__list {
+  list-style: none;
 }
 /*# sourceMappingURL=style.css.map */
