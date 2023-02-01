@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>Cat energy главная страница</title>
 </head>
@@ -10,15 +11,22 @@
 <body class="page__body">
   <header class="page__header header">
     <nav class="header__nav nav">
-      <a class="header__logo logo" href="index.html">
-        <span class="visually-hidden">Главная</span>
-        <img class="logo__img logo__img--mobile" src="img/logo-mobile.svg" width="34" height="38" alt="main-logo">
-        <img class="logo__title logo__title--mobile" src="img/logo-title.svg" width="101" height="18"
-          alt="Cat energy title">
-      </a>
-      <button class="header__toggler" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <div class="header__bar">
+        <a class="header__logo logo" href="index.html">
+          <span class="visually-hidden">Главная</span>
+          <img class="logo__img logo__img--mobile" src="img/logo-mobile.svg" width="34" height="38" alt="main-logo">
+          <img class="logo__title logo__title--mobile" src="img/logo-title.svg" width="101" height="18"
+            alt="Cat energy title">
+        </a>
+        <button class="header__toggler" type="button">
+          <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5" />
+            <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5" />
+            <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5" />
+          </svg>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
       <ul class="header__menu site-menu">
         <li class="site-menu__item site-menu__item--current">
           <a class="site-menu__link" href="index.html">
