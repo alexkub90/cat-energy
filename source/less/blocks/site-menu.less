@@ -7,6 +7,12 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 400;
+    display: flex;
+    font-size: 18px;
+  }
 }
 
 .site-menu__link {
@@ -21,5 +27,13 @@
 
   &:last-child {
     border-bottom: 1px solid @pale-grey;
+
+    @media (min-width: @tablet-width) {
+      border: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    border: none;
   }
 }
