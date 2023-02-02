@@ -12,7 +12,12 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 174px 1fr;
-    gap: 94px;
+    gap: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    grid-template-columns: 202px 1fr;
   }
 }
 
@@ -26,8 +31,14 @@
   align-items: center;
 
   @media (min-width: @tablet-width) {
-    grid-template-columns: 34px 1fr;
+    grid-template-columns: 1fr;
+    gap: 0;
     width: 174px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
   }
 }
 

@@ -3,6 +3,40 @@
   grid-template-columns: 34px 1fr;
   gap: 16px;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr;
+
+    .logo__tablet {
+      display: block;
+    }
+
+    .logo__img,
+    .logo__title,
+    .logo__desktop {
+      display: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .logo__desktop {
+      display: block;
+    }
+
+    .logo__img,
+    .logo__title,
+    .logo__tablet {
+      display: none;
+    }
+  }
+}
+
+.logo__tablet {
+  display: none;
+}
+
+.logo__desktop {
+  display: none;
 }
 
 .logo__title {
