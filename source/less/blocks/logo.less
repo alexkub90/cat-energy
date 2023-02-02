@@ -7,38 +7,43 @@
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr;
 
-    .logo__tablet {
+    .logo__img--tablet {
       display: block;
     }
 
-    .logo__img,
-    .logo__title,
-    .logo__desktop {
+    .logo__img--mobile,
+    .logo__title--mobile,
+    .logo__img--desktop {
       display: none;
     }
   }
 
   @media (min-width: @desktop-width) {
-    .logo__desktop {
+    .logo__img--desktop {
       display: block;
     }
 
-    .logo__img,
-    .logo__title,
-    .logo__tablet {
+    .logo__img--mobile,
+    .logo__title--mobile,
+    .logo__img--tablet {
       display: none;
     }
   }
 }
 
-.logo__tablet {
+.logo__img--mobile {
+  padding-top: 0;
+}
+
+.logo__img--tablet {
   display: none;
 }
 
-.logo__desktop {
+.logo__img--desktop {
   display: none;
 }
 
-.logo__title {
+.logo__title--mobile {
+  padding-top: 5px;
   justify-self: center;
 }
