@@ -238,15 +238,17 @@ img {
     border: none;
   }
 }
-.site-menu__item--current::after {
-  position: absolute;
-  content: "";
-  background-color: #68b738;
-  width: 63px;
-  height: 2px;
-  bottom: 2px;
-  right: 0;
-  left: 1px;
+@media (min-width: 768px) {
+  .site-menu__item--current::after {
+    position: absolute;
+    content: "";
+    background-color: #68b738;
+    width: 63px;
+    height: 2px;
+    bottom: 2px;
+    right: 0;
+    left: 1px;
+  }
 }
 @media (min-width: 1300px) {
   .site-menu__item--current::after {
@@ -259,7 +261,7 @@ img {
   margin: 0 auto;
 }
 .promo {
-  padding-top: 27px;
+  padding: 27px 0 20px 0;
   color: #ffffff;
   background-position: 50% 0;
   background-image: url("../img/backgrounds/background-promo.jpg");

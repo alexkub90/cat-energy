@@ -76,14 +76,16 @@
 
 .site-menu__item--current {
   &::after {
-    position: absolute;
-    content: "";
-    background-color: #68b738;
-    width: 63px;
-    height: 2px;
-    bottom: 2px;
-    right: 0;
-    left: 1px;
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      content: "";
+      background-color: #68b738;
+      width: 63px;
+      height: 2px;
+      bottom: 2px;
+      right: 0;
+      left: 1px;
+    }
 
     @media (min-width: @desktop-width) {
       width: 68px;
