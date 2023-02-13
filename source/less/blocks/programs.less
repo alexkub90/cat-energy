@@ -2,6 +2,7 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 570px 570px;
+    grid-template-rows: 374px;
     column-gap: 80px;
   }
 }
@@ -25,8 +26,8 @@
     display: grid;
     grid-template-columns: 164px 1fr;
     column-gap: 0;
-    grid-template-rows: repeat(3, auto);
-    padding: 43px 52px;
+    grid-template-rows: 106px 1fr 1fr;
+    padding: 43px 51px 52px 51px;
   }
 
   &:nth-of-type(1) {
@@ -45,6 +46,11 @@
     @media (min-width: @tablet-width) {
       column-gap: 8px;
       padding: 52px 26px 56px 52px;
+    }
+
+    @media (min-width: @desktop-width) {
+      column-gap: 0;
+      padding: 43px 51px 52px 51px;
     }
   }
 }
@@ -75,6 +81,7 @@
     &--desktop {
       display: block;
       grid-column: 1/2;
+      grid-row: 1/2;
     }
 
     &--mobile,
@@ -110,6 +117,9 @@
   @media (min-width: @desktop-width) {
     &--desktop {
       display: block;
+      margin-left: -18px;
+      margin-bottom: -10px;
+      grid-row: 1/2;
     }
 
     &--mobile,
@@ -141,10 +151,10 @@
 
   @media (min-width: @desktop-width) {
     grid-column: 2/-1;
+    grid-row: 1/2;
     font-size: 36px;
     line-height: 36px;
     margin: 0;
-    padding-bottom: 6px;
   }
 }
 
@@ -170,8 +180,10 @@
 
   @media (min-width: @desktop-width) {
     grid-column: 2/-1;
+    grid-row: 1/2;
     font-size: 36px;
     line-height: 36px;
+    margin: 0;
   }
 }
 
@@ -195,10 +207,11 @@
 
   @media (min-width: @desktop-width) {
     grid-column: 1/-1;
+    grid-row: 2/3;
     font-size: 15px;
     line-height: 24px;
     letter-spacing: -0.2px;
-    margin-top: 34px;
+    margin-top: 40px;
     padding: 0;
   }
 }
@@ -221,10 +234,11 @@
   }
 
   @media (min-width: @desktop-width) {
+    grid-row: 3/-1;
+    grid-column: 1/2;
     font-size: 20px;
     line-height: 30px;
-    margin-top: 17px;
-    padding-bottom: 8px;
+    margin-top: 25px;
     position: relative;
   }
 }
@@ -239,9 +253,21 @@
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
     margin: 0;
-    bottom: 24px;
+    position: absolute;
+  }
+}
+
+.programs__arrow-slim {
+  @media (min-width: @desktop-width) {
+    top: 9px;
+    left: 137px;
+  }
+}
+
+.programs__arrow-fat {
+  @media (min-width: @desktop-width) {
+    top: 9px;
     left: 131px;
   }
 }
