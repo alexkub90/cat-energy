@@ -10,13 +10,24 @@
 }
 
 .usage__list {
+  display: grid;
+  row-gap: 21px;
   list-style: none;
-  color: @dark-grey;
-  padding: 0;
+  color: #444444;
+  padding: 40px 0 30px 0;
   margin: 0;
 }
 
 .usage__item {
   display: grid;
-  grid-template-columns: 60px 199px;
+  grid-template-columns: 60px 1fr;
+  column-gap: 21px;
+}
+
+.usage__description {
+  font-family: @font-arial;
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: @dark-grey;
 }
