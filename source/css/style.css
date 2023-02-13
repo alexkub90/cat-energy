@@ -163,6 +163,7 @@ img {
   font-size: 36px;
   line-height: 40px;
   color: #000000;
+  margin: 0;
 }
 .main__description {
   font-family: "Oswald", "Arial", sans-serif;
@@ -695,8 +696,8 @@ img {
     left: 131px;
   }
 }
-.usage {
-  padding: 20px;
+.usage__container {
+  padding: 20px 0 50px 0;
 }
 .usage__title {
   font-family: "Oswald", "Arial", sans-serif;
@@ -709,7 +710,7 @@ img {
   row-gap: 21px;
   list-style: none;
   color: #444444;
-  padding: 40px 0 30px 0;
+  padding: 40px 0 0 0;
   margin: 0;
 }
 .usage__item {
@@ -725,23 +726,34 @@ img {
   color: #444444;
 }
 .example {
-  padding: 20px;
+  padding: 25px 0 40px 0;
   background-color: #eaeaea;
 }
 .example__text {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Arial", sans-serif;
   color: #444444;
+  margin: 0;
+  padding: 40px 0 20px 0;
 }
 .example__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
   text-align: center;
+  margin: 0;
+  margin-bottom: 19px;
 }
 .example__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  grid-row: 2/3;
+  width: 90px;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;
   color: #444444;
   text-transform: lowercase;
+  text-align: center;
+  padding-left: 33px;
 }
 .example__description {
   font-family: "Oswald", "Arial", sans-serif;
@@ -750,6 +762,9 @@ img {
   line-height: 24px;
   color: #000000;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 9px;
+  padding-top: 14px;
 }
 .example__addition {
   font-family: "Oswald", "Arial", sans-serif;
@@ -759,9 +774,13 @@ img {
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+  margin: 0;
+  margin-bottom: 40px;
 }
-.cooperation {
-  padding: 20px;
+.cooperation__container {
+  padding: 26px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .cooperation__title {
   font-family: "Oswald", "Arial", sans-serif;
@@ -770,13 +789,13 @@ img {
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+  margin: 0;
 }
 .cooperation__street {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
+  font-family: "Arial", sans-serif;
   line-height: 20px;
   color: #444444;
+  margin: 0;
 }
 .catalog-list {
   padding: 20px;

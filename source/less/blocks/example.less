@@ -1,24 +1,35 @@
 .example {
-  padding: 20px;
+  padding: 25px 0 40px 0;
   background-color: @grey;
 }
 
 .example__text {
-  font-family: @font;
+  font-family: @font-arial;
   color: @dark-grey;
+  margin: 0;
+  padding: 40px 0 20px 0;
 }
 
 .example__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
   text-align: center;
+  margin: 0;
+  margin-bottom: 19px;
 }
 
 .example__title {
-  font-family: @font;
+  grid-row: 2/3;
+  width: 90px;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;
-  color: @dark-grey;
+  color: #444444;
   text-transform: lowercase;
+  text-align: center;
+  padding-left: 33px;
 }
 
 .example__description {
@@ -28,6 +39,9 @@
   line-height: 24px;
   color: @black;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 9px;
+  padding-top: 14px;
 }
 
 .example__addition {
@@ -38,4 +52,6 @@
   text-transform: uppercase;
   text-align: center;
   color: @black;
+  margin: 0;
+  margin-bottom: 40px;
 }
