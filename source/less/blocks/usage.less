@@ -1,5 +1,9 @@
 .usage__container {
   padding: 20px 0 50px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 45px 0 62px 0;
+  }
 }
 
 .usage__title {
@@ -16,12 +20,59 @@
   color: #444444;
   padding: 40px 0 0 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: max-content max-content;
+    padding: 72px 0 0 0;
+    column-gap: 139px;
+    row-gap: 93px;
+  }
 }
 
 .usage__item {
   display: grid;
   grid-template-columns: 60px 1fr;
   column-gap: 21px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 245px;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+  }
+
+  &--first {
+    @media (min-width: @tablet-width) {
+      &::after {
+        position: absolute;
+        content: "1";
+        font-family: @font;
+        font-weight: 400;
+        font-size: 280px;
+        line-height: 280px;
+        color: @light-grey;
+        z-index: -1;
+        bottom: -16px;
+        right: 16px;
+      }
+    }
+  }
+
+  &--second {
+    @media (min-width: @tablet-width) {
+      &::after {
+        position: absolute;
+        content: "2";
+        font-family: @font;
+        font-weight: 400;
+        font-size: 280px;
+        line-height: 280px;
+        color: @light-grey;
+        z-index: -1;
+        bottom: -16px;
+        right: 16px;
+      }
+    }
+  }
 }
 
 .usage__description {
@@ -30,4 +81,26 @@
   font-size: 14px;
   line-height: 18px;
   color: @dark-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.usage__icon {
+  &--tablet {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+      padding-bottom: 32px;
+    }
+  }
 }

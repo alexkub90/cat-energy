@@ -165,6 +165,12 @@ img {
   color: #000000;
   margin: 0;
 }
+@media (min-width: 768px) {
+  .main__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
 .main__description {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -699,6 +705,11 @@ img {
 .usage__container {
   padding: 20px 0 50px 0;
 }
+@media (min-width: 768px) {
+  .usage__container {
+    padding: 45px 0 62px 0;
+  }
+}
 .usage__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -713,10 +724,53 @@ img {
   padding: 40px 0 0 0;
   margin: 0;
 }
+@media (min-width: 768px) {
+  .usage__list {
+    grid-template-columns: max-content max-content;
+    padding: 72px 0 0 0;
+    column-gap: 139px;
+    row-gap: 93px;
+  }
+}
 .usage__item {
   display: grid;
   grid-template-columns: 60px 1fr;
   column-gap: 21px;
+}
+@media (min-width: 768px) {
+  .usage__item {
+    grid-template-columns: 245px;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+  }
+}
+@media (min-width: 768px) {
+  .usage__item--first::after {
+    position: absolute;
+    content: "1";
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    z-index: -1;
+    bottom: -16px;
+    right: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .usage__item--second::after {
+    position: absolute;
+    content: "2";
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    z-index: -1;
+    bottom: -16px;
+    right: 16px;
+  }
 }
 .usage__description {
   font-family: "Arial", sans-serif;
@@ -724,6 +778,24 @@ img {
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+}
+@media (min-width: 768px) {
+  .usage__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.usage__icon--tablet {
+  display: none;
+}
+@media (min-width: 768px) {
+  .usage__icon--mobile {
+    display: none;
+  }
+  .usage__icon--tablet {
+    display: block;
+    padding-bottom: 32px;
+  }
 }
 .example {
   padding: 25px 0 40px 0;
