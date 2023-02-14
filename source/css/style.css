@@ -769,7 +769,35 @@ img {
     color: #f2f2f2;
     z-index: -1;
     bottom: -16px;
-    right: 16px;
+    right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .usage__item--third::after {
+    position: absolute;
+    content: "3";
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    z-index: -1;
+    bottom: -16px;
+    right: -2px;
+  }
+}
+@media (min-width: 768px) {
+  .usage__item--fourth::after {
+    position: absolute;
+    content: "4";
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    z-index: -1;
+    bottom: -16px;
+    right: -4px;
   }
 }
 .usage__description {

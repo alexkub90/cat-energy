@@ -69,7 +69,41 @@
         color: @light-grey;
         z-index: -1;
         bottom: -16px;
-        right: 16px;
+        right: 0;
+      }
+    }
+  }
+
+  &--third {
+    @media (min-width: @tablet-width) {
+      &::after {
+        position: absolute;
+        content: "3";
+        font-family: @font;
+        font-weight: 400;
+        font-size: 280px;
+        line-height: 280px;
+        color: @light-grey;
+        z-index: -1;
+        bottom: -16px;
+        right: -2px;
+      }
+    }
+  }
+
+  &--fourth {
+    @media (min-width: @tablet-width) {
+      &::after {
+        position: absolute;
+        content: "4";
+        font-family: @font;
+        font-weight: 400;
+        font-size: 280px;
+        line-height: 280px;
+        color: @light-grey;
+        z-index: -1;
+        bottom: -16px;
+        right: -4px;
       }
     }
   }
