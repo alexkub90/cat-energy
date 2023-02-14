@@ -1,3 +1,43 @@
+.social {
+  padding: 19px 73px;
+  border-bottom: 1px solid @border-grey;
+}
+
 .social__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 24px);
+  column-gap: 31px;
+}
+
+.social__item {
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.social__link {
+  display: block;
+  position: relative;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.social__logo-vk {
+  position: absolute;
+  top: 4px;
+  left: 0;
+}
+
+.social__logo-instagram {
+  position: absolute;
+  left: 4px;
+  top: 5px;
+}
+
+.social__logo-facebook {
+  position: absolute;
+  right: 4px;
+  top: 1px;
 }
