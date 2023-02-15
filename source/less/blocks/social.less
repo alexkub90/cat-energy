@@ -1,6 +1,12 @@
 .social {
   padding: 19px 73px;
   border-bottom: 1px solid @border-grey;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    padding: 16px 0 0 0;
+    margin-left: 30px;
+  }
 }
 
 .social__list {
@@ -10,11 +16,21 @@
   display: grid;
   grid-template-columns: repeat(3, 24px);
   column-gap: 31px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(3, 30px);
+    column-gap: 22px;
+  }
 }
 
 .social__item {
   min-width: 24px;
   min-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 30px;
+    min-height: 33px;
+  }
 }
 
 .social__link {
@@ -22,22 +38,75 @@
   position: relative;
   min-width: 24px;
   min-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 30px;
+    min-height: 33px;
+  }
 }
 
 .social__logo-vk {
   position: absolute;
   top: 4px;
   left: 0;
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--tablet {
+      display: block;
+    }
+
+    &--mobile,
+    &--desktop {
+      display: none;
+    }
+  }
 }
 
 .social__logo-instagram {
   position: absolute;
   left: 4px;
   top: 5px;
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--tablet {
+      display: block;
+    }
+
+    &--mobile,
+    &--desktop {
+      display: none;
+    }
+  }
 }
 
 .social__logo-facebook {
   position: absolute;
   right: 4px;
   top: 1px;
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--tablet {
+      display: block;
+    }
+
+    &--mobile,
+    &--desktop {
+      display: none;
+    }
+  }
 }

@@ -47,4 +47,20 @@
 .cooperation__image {
   display: block;
   margin: auto;
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--tablet {
+      display: block;
+    }
+
+    &--mobile,
+    &--desktop {
+      display: none;
+    }
+  }
 }
