@@ -872,7 +872,7 @@ img {
     width: 100%;
     height: 461px;
     z-index: 0;
-    bottom: -26px;
+    bottom: -47px;
   }
 }
 .example__container {
@@ -883,7 +883,7 @@ img {
     display: grid;
     grid-template-columns: 370px 1fr;
     grid-template-rows: repeat(5, max-content);
-    padding: 43px 0 21px 0;
+    padding: 43px 0 0 0;
   }
 }
 .example__text {
@@ -1022,6 +1022,14 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+@media (min-width: 768px) {
+  .cooperation__container {
+    grid-template-columns: 171px 160px;
+    column-gap: 303px;
+    margin-top: 46px;
+    padding: 61px 40px;
+  }
+}
 .cooperation__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -1031,11 +1039,24 @@ img {
   color: #111111;
   margin: 0;
 }
+@media (min-width: 768px) {
+  .cooperation__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
 .cooperation__street {
   font-family: "Arial", sans-serif;
   line-height: 20px;
   color: #444444;
   margin: 0;
+}
+@media (min-width: 768px) {
+  .cooperation__street {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+  }
 }
 .cooperation__image {
   display: block;
