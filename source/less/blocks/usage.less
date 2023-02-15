@@ -1,8 +1,18 @@
+.usage {
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid @pale-grey;
+  }
+}
+
 .usage__container {
   padding: 20px 0 50px 0;
 
   @media (min-width: @tablet-width) {
     padding: 45px 0 62px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 73px 0 62px 0;
   }
 }
 
@@ -26,6 +36,11 @@
     padding: 72px 0 0 0;
     column-gap: 139px;
     row-gap: 93px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 80px;
   }
 }
 
@@ -120,6 +135,12 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -1px;
+  }
 }
 
 .usage__icon {
@@ -136,5 +157,9 @@
       display: block;
       padding-bottom: 32px;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 31px;
   }
 }

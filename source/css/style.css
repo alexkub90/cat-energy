@@ -169,6 +169,8 @@ img {
   .main__title {
     font-size: 60px;
     line-height: 60px;
+    grid-column: 1/-1;
+    grid-row: 1/2;
   }
 }
 .main__description {
@@ -702,12 +704,22 @@ img {
     left: 131px;
   }
 }
+@media (min-width: 768px) {
+  .usage {
+    border-bottom: 1px solid #E6E6E6;
+  }
+}
 .usage__container {
   padding: 20px 0 50px 0;
 }
 @media (min-width: 768px) {
   .usage__container {
     padding: 45px 0 62px 0;
+  }
+}
+@media (min-width: 1300px) {
+  .usage__container {
+    padding: 73px 0 62px 0;
   }
 }
 .usage__title {
@@ -730,6 +742,12 @@ img {
     padding: 72px 0 0 0;
     column-gap: 139px;
     row-gap: 93px;
+  }
+}
+@media (min-width: 1300px) {
+  .usage__list {
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 80px;
   }
 }
 .usage__item {
@@ -813,6 +831,13 @@ img {
     line-height: 24px;
   }
 }
+@media (min-width: 1300px) {
+  .usage__description {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -1px;
+  }
+}
 .usage__icon--tablet {
   display: none;
 }
@@ -825,15 +850,56 @@ img {
     padding-bottom: 32px;
   }
 }
+@media (min-width: 1300px) {
+  .usage__icon {
+    padding-bottom: 31px;
+  }
+}
 .example {
-  padding: 25px 0 40px 0;
   background-color: #eaeaea;
+}
+@media (min-width: 768px) {
+  .example {
+    background-color: #ffffff;
+    position: relative;
+  }
+}
+@media (min-width: 768px) {
+  .example::after {
+    content: "";
+    position: absolute;
+    background-color: #eaeaea;
+    width: 100%;
+    height: 461px;
+    z-index: 0;
+    bottom: -26px;
+  }
+}
+.example__container {
+  padding: 25px 0 40px 0;
+}
+@media (min-width: 768px) {
+  .example__container {
+    display: grid;
+    grid-template-columns: 370px 1fr;
+    grid-template-rows: repeat(5, max-content);
+    padding: 43px 0 21px 0;
+  }
 }
 .example__text {
   font-family: "Arial", sans-serif;
   color: #444444;
   margin: 0;
   padding: 40px 0 20px 0;
+}
+@media (min-width: 768px) {
+  .example__text {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    padding: 64px 24px 54px 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 .example__list {
   display: grid;
@@ -842,6 +908,15 @@ img {
   text-align: center;
   margin: 0;
   margin-bottom: 19px;
+}
+@media (min-width: 768px) {
+  .example__list {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    grid-template-columns: repeat(2, 162px);
+    column-gap: 42px;
+    margin: 0 0 79px 0;
+  }
 }
 .example__title {
   grid-row: 2/3;
@@ -853,7 +928,16 @@ img {
   color: #444444;
   text-transform: lowercase;
   text-align: center;
-  padding-left: 33px;
+  padding: 0 0 0 33px;
+}
+@media (min-width: 768px) {
+  .example__title {
+    font-size: 14px;
+    line-height: 14px;
+    width: max-content;
+    padding: 0;
+    margin: auto;
+  }
 }
 .example__description {
   font-family: "Oswald", "Arial", sans-serif;
@@ -866,6 +950,14 @@ img {
   margin-bottom: 9px;
   padding-top: 14px;
 }
+@media (min-width: 768px) {
+  .example__description {
+    font-size: 30px;
+    line-height: 37px;
+    margin: 0;
+    padding: 14px 0 12px 0;
+  }
+}
 .example__addition {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -876,6 +968,51 @@ img {
   color: #000000;
   margin: 0;
   margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .example__addition {
+    grid-row: 3/4;
+    grid-column: 2/-1;
+    margin: 0;
+    font-size: 20px;
+    line-height: 28px;
+    margin-left: 163px;
+    padding-top: 7px;
+    text-align: end;
+  }
+}
+@media (min-width: 768px) {
+  .example__images {
+    grid-row: 4/5;
+    grid-column: 1/-1;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 19px;
+  }
+}
+.example__image--tablet,
+.example__image--desktop {
+  display: none;
+}
+@media (min-width: 768px) {
+  .example__image--mobile,
+  .example__image--desktop {
+    display: none;
+  }
+  .example__image--tablet {
+    display: block;
+    margin: auto;
+  }
+}
+@media (min-width: 768px) {
+  .example__switcher {
+    grid-column: 1/-1;
+    grid-row: 5/6;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+  }
 }
 .cooperation {
   margin-bottom: -3px;
