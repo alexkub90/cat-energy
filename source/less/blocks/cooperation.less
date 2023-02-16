@@ -10,9 +10,21 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 171px 160px;
-    column-gap: 303px;
+    column-gap: 297px;
     margin-top: 46px;
     padding: 61px 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    max-width: 565px;
+    min-height: 198px;
+    background-color: #ffffff;
+    z-index: 1;
+    margin-top: 95px;
+    margin-left: 110px;
+    column-gap: 119px;
+    padding: 58px 40px 60px 40px;
   }
 }
 
@@ -29,6 +41,10 @@
     font-size: 20px;
     line-height: 26px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 2px 0 0 40px;
+  }
 }
 
 .cooperation__street {
@@ -41,6 +57,10 @@
     font-size: 16px;
     line-height: 20px;
     text-align: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
   }
 }
 
@@ -60,6 +80,18 @@
 
     &--mobile,
     &--desktop {
+      display: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--desktop {
+      display: block;
+      position: relative;
+    }
+
+    &--mobile,
+    &--tablet {
       display: none;
     }
   }

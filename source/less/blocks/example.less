@@ -16,6 +16,11 @@
       z-index: 0;
       bottom: -47px;
     }
+
+    @media (min-width: @desktop-width) {
+      bottom: -21px;
+      height: 483px;
+    }
   }
 }
 
@@ -27,6 +32,14 @@
     grid-template-columns: 370px 1fr;
     grid-template-rows: repeat(5, max-content);
     padding: 43px 0 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-rows: repeat(4, max-content);
+    position: relative;
+    padding: 67px 0 22px 0;
+    grid-template-columns: 436px 1fr;
+    z-index: 1;
   }
 }
 
@@ -42,6 +55,12 @@
     padding: 64px 24px 54px 0;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    padding: 147px 0 70px 0;
   }
 }
 
@@ -59,6 +78,10 @@
     grid-template-columns: repeat(2, 162px);
     column-gap: 42px;
     margin: 0 0 79px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }
 
@@ -124,6 +147,14 @@
     padding-top: 7px;
     text-align: end;
   }
+
+  @media (min-width: @desktop-width) {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    margin: 0;
+    padding: 49px 0 0 0;
+    text-align: left;
+  }
 }
 
 .example__images {
@@ -134,6 +165,14 @@
     position: relative;
     z-index: 1;
     margin-bottom: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+    position: absolute;
+    bottom: 89px;
+    right: -2px;
   }
 }
 
@@ -163,5 +202,11 @@
     position: relative;
     z-index: 1;
     margin: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 2/-1;
+    grid-row: 4/5;
+    padding: 36px 0;
   }
 }
