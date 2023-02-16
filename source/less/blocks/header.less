@@ -30,17 +30,19 @@
 .header__bar {
   width: 320px;
   margin: 0 auto;
-  padding: 9px 20px 16px;
+  padding: 10px 20px 15px;
   display: grid;
   grid-template-columns: 34px 1fr 34px;
   gap: 16px;
   align-items: center;
+  border-bottom: 1px solid @pale-grey;
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr;
     gap: 0;
     width: 174px;
     padding: 0;
+    border: none;
   }
 
   @media (min-width: @desktop-width) {
