@@ -1563,6 +1563,7 @@ img {
   padding: 0 0 0 15px;
 }
 .field__input--email {
+  position: relative;
   min-width: 219px;
   padding: 0 0 0 15px;
 }
@@ -1574,6 +1575,16 @@ img {
   min-width: 280px;
   min-height: 150px;
   padding: 9px 0 0 14px;
+}
+.field__icon--email {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+}
+.field__icon--phone {
+  position: absolute;
+  bottom: 35px;
+  right: 13px;
 }
 .control__line {
   font-family: "Oswald", "Arial", sans-serif;
