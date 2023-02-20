@@ -1,3 +1,8 @@
+.field {
+  &--textarea {
+    padding: 37px 0 0 0;
+  }
+}
 
 .field__line {
   font-family: @font;
@@ -6,6 +11,11 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @dark-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   &--name {
     padding: 0 10px 0 0;
@@ -38,9 +48,19 @@
   border: 1px solid @pale-grey-2;
   min-height: 45px;
 
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    min-height: 52px;
+  }
+
   &--name {
     min-width: 229px;
     padding: 0 0 0 14px;
+
+    @media (min-width: @tablet-width) {
+      min-width: 567px;
+    }
   }
 
   &--weight {

@@ -1,41 +1,42 @@
-.field {
-  &--textarea {
-    padding: 37px 0 0 0;
-  }
-}
-
 .field-group {
   padding: 0;
   border: none;
   position: relative;
 
-  &::after {
-    position: absolute;
-    content: "";
-    width: 320px;
-    height: 1px;
-    left: -21px;
-    border-bottom: 1px solid #d9d9d9;
+  &--cat {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 320px;
+      height: 1px;
+      left: -21px;
+      border-bottom: 1px solid #d9d9d9;
+    }
+  }
+
+  &--program {
+    padding: 30px 0 0 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 320px;
+      height: 1px;
+      left: -21px;
+      border-bottom: 1px solid #d9d9d9;
+    }
   }
 
   &--contacts {
-    &::after {
-      display: none;
-    }
+    padding: 0 0 24px 0;
   }
 
   &--comment {
     padding: 0 0 20px 0;
-
-    &::after {
-      display: none;
-    }
   }
 
   &--additionally {
-    &::after {
-      display: none;
-    }
+    padding: 0 0 35px 0;
   }
 }
 
@@ -44,49 +45,39 @@
 }
 
 .field-group__list {
+  display: grid;
   list-style: none;
   margin: 0;
   padding: 0;
 
   &--cat {
+    row-gap: 14px;
     padding: 0 0 23px 0;
+  }
+
+  &--program {
+    row-gap: 3px;
+    padding: 0 0 1px 0;
+  }
+
+  &--contacts {
+    grid-template-rows: repeat(2, 45px);
+    row-gap: 14px;
   }
 
   &--checkbox {
     display: grid;
     grid-template-rows: repeat(4, 30px);
     row-gap: 12px;
-    padding: 0 0 29px 0;
   }
 }
 
 .field-group__item {
-  &--name {
-    padding: 0 0 14px 0;
-  }
-
-  &--weight {
-    padding: 0 0 14px 0;
-  }
-
-  &--weight-loss {
-    padding: 30px 0 24px 45px;
-  }
-
-  &--weight-gain {
-    padding: 0 0 24px 45px;
-  }
-
+  &--weight-loss,
+  &--weight-gain,
   &--advice {
-    padding: 0 0 22px 45px;
-  }
-
-  &--email {
-    padding: 0 0 14px 0;
-  }
-
-  &--phone {
-    padding: 0 0 24px 0;
+    padding: 0 0 0 45px;
+    min-height: 40px;
   }
 
   &--checkbox {
@@ -130,7 +121,7 @@
   }
 
   &--additionally {
-    padding: 0 0 40px 0;
+    padding: 0 0 34px 0;
 
     &::after {
       position: absolute;
