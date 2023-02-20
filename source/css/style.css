@@ -83,7 +83,7 @@ img {
   grid-template-columns: 34px 1fr 34px;
   gap: 16px;
   align-items: center;
-  border-bottom: 1px solid #E6E6E6;
+  border-bottom: 1px solid #e6e6e6;
 }
 @media (min-width: 768px) {
   .header__bar {
@@ -235,7 +235,7 @@ img {
   }
 }
 .site-menu__item {
-  border-bottom: 1px solid #E6E6E6;
+  border-bottom: 1px solid #e6e6e6;
 }
 @media (min-width: 768px) {
   .site-menu__item:nth-of-type(2) {
@@ -708,7 +708,7 @@ img {
 }
 @media (min-width: 768px) {
   .usage {
-    border-bottom: 1px solid #E6E6E6;
+    border-bottom: 1px solid #e6e6e6;
   }
 }
 @media (min-width: 1300px) {
@@ -1402,9 +1402,6 @@ img {
 .copyright__link {
   text-align: end;
 }
-.form {
-  padding: 20px;
-}
 .form__group {
   margin: 0;
 }
@@ -1415,13 +1412,59 @@ img {
   line-height: 16px;
   color: #000000;
 }
+.form__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  padding: 27px 0 37px 0;
+}
+.form__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 0 0 39px 0;
+}
 .field-group {
-  padding: 20px 0;
+  padding: 0;
   border: none;
+  position: relative;
+}
+.field-group::after {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 1px;
+  left: -21px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.field-group__control {
+  position: relative;
 }
 .field-group__list {
   list-style: none;
+  margin: 0;
   padding: 0;
+}
+.field-group__list--cat {
+  padding: 0 0 23px 0;
+}
+.field-group__item--name {
+  padding: 0 0 14px 0;
+}
+.field-group__item--weight {
+  padding: 0 0 14px 0;
+}
+.field-group__item--weight-loss {
+  padding: 30px 0 24px 45px;
+}
+.field-group__item--weight-gain {
+  padding: 0 0 24px 45px;
+}
+.field-group__item--advice {
+  padding: 0 0 22px 45px;
 }
 .field-group__heading {
   font-family: "Oswald", "Arial", sans-serif;
@@ -1429,6 +1472,16 @@ img {
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+}
+.field-group__item input[type="radio"]:checked + .control__radiobutton::after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #68b738;
+  border-radius: 50%;
+  top: 7px;
+  left: 7px;
 }
 .field__line {
   font-family: "Oswald", "Arial", sans-serif;
@@ -1438,6 +1491,15 @@ img {
   text-transform: uppercase;
   color: #444444;
 }
+.field__line--name {
+  padding: 0 10px 0 0;
+}
+.field__line--weight {
+  padding: 0 13px 0 0;
+}
+.field__line--age {
+  padding: 0 11px 0 0;
+}
 .field__input {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -1445,6 +1507,20 @@ img {
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  border: 1px solid #e7e7e7;
+  min-height: 45px;
+}
+.field__input--name {
+  min-width: 229px;
+  padding: 0 0 0 14px;
+}
+.field__input--weight {
+  min-width: 204px;
+  padding: 0 0 0 15px;
+}
+.field__input--age {
+  min-width: 172px;
+  padding: 0 0 0 15px;
 }
 .control__line {
   font-family: "Oswald", "Arial", sans-serif;
@@ -1453,6 +1529,17 @@ img {
   line-height: 18px;
   color: #222222;
   text-transform: uppercase;
+}
+.control__radiobutton {
+  position: absolute;
+  content: "";
+  top: -6px;
+  left: -45px;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
 }
 .button {
   display: inline-block;

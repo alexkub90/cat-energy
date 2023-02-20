@@ -1,3 +1,4 @@
+
 .field__line {
   font-family: @font;
   font-weight: 400;
@@ -5,6 +6,18 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @dark-grey;
+
+  &--name {
+    padding: 0 10px 0 0;
+  }
+
+  &--weight {
+    padding: 0 13px 0 0;
+  }
+
+  &--age {
+    padding: 0 11px 0 0;
+  }
 }
 
 .field__input {
@@ -14,4 +27,21 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @dark-grey;
+  border: 1px solid @pale-grey-2;
+  min-height: 45px;
+
+  &--name {
+    min-width: 229px;
+    padding: 0 0 0 14px;
+  }
+
+  &--weight {
+    min-width: 204px;
+    padding: 0 0 0 15px;
+  }
+
+  &--age {
+    min-width: 172px;
+    padding: 0 0 0 15px;
+  }
 }

@@ -60,25 +60,25 @@
       <form class="form__container container" action="https://echo.htmlacademy.ru/" method="post">
         <h1 class="form__title">Подбор программы</h1>
         <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <fieldset class="form__group field-group">
+        <fieldset class="form__group field-group field-group--cat">
           <legend class="visually-hidden">Данные кота</legend>
-          <ul class="field-group__list">
-            <li class="field-group__item">
-              <label class="field">
-                <span class="field__line">ИМЯ:*</span>
-                <input class="field__input" type="text" name="name" placeholder="Барсик" required>
+          <ul class="field-group__list field-group__list--cat">
+            <li class="field-group__item field-group__item--name">
+              <label class="field field--name">
+                <span class="field__line field__line--name">ИМЯ:*</span>
+                <input class="field__input field__input--name" type="text" name="name" placeholder="Барсик" required>
               </label>
             </li>
-            <li class="field-group__item">
-              <label class="field">
-                <span class="field__line">Вес (кг):*</span>
-                <input class="field__input" type="text" name="weight" placeholder="7" required>
+            <li class="field-group__item field-group__item--weight">
+              <label class="field field--weight">
+                <span class="field__line field__line--weight">Вес (кг):*</span>
+                <input class="field__input field__input--weight" type="text" name="weight" placeholder="7" required>
               </label>
             </li>
-            <li class="field-group__item">
-              <label class="field">
-                <span class="field__line">Возраст (лет):</span>
-                <input class="field__input" type="text" name="age" placeholder="7" required>
+            <li class="field-group__item field-group__item--age">
+              <label class="field field--age">
+                <span class="field__line field__line--age">Возраст (лет):</span>
+                <input class="field__input field__input--age" type="text" name="age" placeholder="7" required>
               </label>
             </li>
           </ul>
@@ -89,21 +89,24 @@
         <fieldset class="form__group field-group">
           <legend class="visually-hidden">Выбор программы</legend>
           <ul class="field-group__list">
-            <li class="field-group__item">
+            <li class="field-group__item field-group__item--weight-loss">
               <label class="field-group__control control control--radio">
-                <input class="control__input" type="radio" name="program" value="weight-loss">
+                <input class="control__input visually-hidden" type="radio" name="program" value="weight-loss" checked>
+                <span class="control__radiobutton"></span>
                 <span class="control__line">Похудение</span>
               </label>
             </li>
-            <li class="field-group__item">
+            <li class="field-group__item field-group__item--weight-gain">
               <label class="field-group__control control control--radio">
-                <input class="control__input" type="radio" name="program" value="weight-gain">
+                <input class="control__input visually-hidden" type="radio" name="program" value="weight-gain">
+                <span class="control__radiobutton"></span>
                 <span class="control__line">Набор массы</span>
               </label>
             </li>
-            <li class="field-group__item">
+            <li class="field-group__item field-group__item--advice">
               <label class="field-group__control control control--radio">
-                <input class="control__input" type="radio" name="program" value="advice">
+                <input class="control__input visually-hidden" type="radio" name="program" value="advice">
+                <span class="control__radiobutton"></span>
                 <span class="control__line">Не знаю (Нужен ваш совет)</span>
               </label>
             </li>
