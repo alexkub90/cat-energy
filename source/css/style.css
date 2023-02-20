@@ -1427,6 +1427,9 @@ img {
   text-transform: uppercase;
   padding: 0 0 39px 0;
 }
+.field--textarea {
+  padding: 37px 0 0 0;
+}
 .field-group {
   padding: 0;
   border: none;
@@ -1439,6 +1442,9 @@ img {
   height: 1px;
   left: -21px;
   border-bottom: 1px solid #d9d9d9;
+}
+.field-group--contacts::after {
+  display: none;
 }
 .field-group__control {
   position: relative;
@@ -1466,12 +1472,40 @@ img {
 .field-group__item--advice {
   padding: 0 0 22px 45px;
 }
+.field-group__item--email {
+  padding: 0 0 14px 0;
+}
+.field-group__item--phone {
+  padding: 0 0 24px 0;
+}
 .field-group__heading {
+  position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+}
+.field-group__heading--contacts {
+  padding: 27px 0 35px 0;
+}
+.field-group__heading--contacts::after {
+  position: absolute;
+  content: "";
+  width: 99px;
+  height: 2px;
+  background-color: #68b738;
+  top: 43px;
+  right: -20px;
+}
+.field-group__heading--comment::after {
+  position: absolute;
+  content: "";
+  width: 158px;
+  height: 2px;
+  background-color: #68b738;
+  top: 20px;
+  left: 142px;
 }
 .field-group__item input[type="radio"]:checked + .control__radiobutton::after {
   position: absolute;
@@ -1500,6 +1534,12 @@ img {
 .field__line--age {
   padding: 0 11px 0 0;
 }
+.field__line--email {
+  padding: 0 7px 0 0;
+}
+.field__line--phone {
+  padding-right: 6px;
+}
 .field__input {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -1521,6 +1561,19 @@ img {
 .field__input--age {
   min-width: 172px;
   padding: 0 0 0 15px;
+}
+.field__input--email {
+  min-width: 219px;
+  padding: 0 0 0 15px;
+}
+.field__input--phone {
+  min-width: 204px;
+  padding: 0 0 0 15px;
+}
+.field__input--textarea {
+  min-width: 280px;
+  min-height: 150px;
+  padding: 9px 0 0 14px;
 }
 .control__line {
   font-family: "Oswald", "Arial", sans-serif;

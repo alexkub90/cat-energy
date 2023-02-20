@@ -115,19 +115,22 @@
 
 
 
-        <fieldset class="form__group field-group">
-          <legend class="field-group__heading">Контактные данные (владельца кота)</legend>
+        <fieldset class="form__group field-group field-group--contacts">
+          <legend class="field-group__heading field-group__heading--contacts">Контактные данные (владельца кота)
+          </legend>
           <ul class="field-group__list">
-            <li class="field-group__item">
+            <li class="field-group__item field-group__item--email">
               <label class="field">
-                <span class="field__line">E-mail:*</span>
-                <input class="field__input" type="email" name="E-mail" placeholder="kuklachev@gmail.com" required>
+                <span class="field__line field__line--email">E-mail:*</span>
+                <input class="field__input field__input--email" type="email" name="E-mail"
+                  placeholder="kuklachev@gmail.com" required>
               </label>
             </li>
-            <li class="field-group__item">
+            <li class="field-group__item field-group__item--phone">
               <label class="field">
-                <span class="field__line">Телефон:*</span>
-                <input class="field__input" type="tel" name="phone-number" placeholder="8 (960) 900-60-90" required>
+                <span class="field__line field__line--phone">Телефон:*</span>
+                <input class="field__input field__input--phone" type="tel" name="phone-number"
+                  placeholder="8 (960) 900-60-90" required>
               </label>
             </li>
           </ul>
@@ -135,9 +138,9 @@
 
 
         <div class="form__group field-group">
-          <label class="field-group__heading" for="comment">Комментарий</label>
-          <div class="field">
-            <textarea class="field__input" name="comment" id="comment" rows="5"
+          <label class="field-group__heading field-group__heading--comment" for="comment">Комментарий</label>
+          <div class="field field--textarea">
+            <textarea class="field__input field__input--textarea" name="comment" id="comment" rows="5"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </div>
@@ -185,43 +188,51 @@
     </footer>
   </main>
   <footer class="page__footer footer">
-    <a class="footer__link" href="index.html">
-      <span class="visually-hidden">Главная</span>
-      <img class="footer__logo footer__logo--mobile" src="./img/footer-logo--mobile.svg" width="128" height="24"
-        alt="Cat energy footer-logo title">
-    </a>
-    <div class="footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">VK htmlacademy</span>
-            <img class="social__logo-vk social__logo-vk--mobile" src="./img/footer-vkontakte--mobile.svg" width="23"
-              height="16" alt="Vk footer logo">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--mobile" href="#">
-            <span class="visually-hidden">Instagram htmlacademy</span>
-            <img class="social__logo-instagram social__logo-instagram--mobile" src="./img/footer-instagram--mobile.svg"
-              width="16" height="16" alt="Instagram footer logo">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--mobile" href="https://www.facebook.com/htmlacademy">
-            <span class="visually-hidden">Facebook htmlacademy</span>
-            <img class="social__logo-facebook social__logo-facebook--mobile" src="./img/footer-facebook--mobile.svg"
-              width="22" height="22" alt="Facebook footer logo">
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer__copyright copyright">
-      <h2 class="copyright__title">HTML Academy</h2>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="visually-hidden">разработано htmlacademy</span>
-        <img class="copyright__logo" src="./img/footer-htmlacademy--mobile.svg" width="27" height="34"
-          alt="htmlacademy footer logo">
+    <div class="footer__container container">
+      <a class="footer__link" href="index.html">
+        <span class="visually-hidden">Главная</span>
+        <img class="footer__logo footer__logo--mobile" src="./img/icons/footer-logo--mobile.svg" width="128" height="24"
+          alt="Cat energy footer-logo title">
       </a>
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">VK htmlacademy</span>
+              <img class="social__logo-vk social__logo-vk--mobile" src="./img/icons/footer-vkontakte--mobile.svg"
+                width="23" height="16" alt="Vk footer logo">
+              <img class="social__logo-vk social__logo-vk--tablet" src="./img/icons/icon_vkontakte--tablet.svg"
+                width="30" height="22" alt="Vk footer logo">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--mobile" href="#">
+              <span class="visually-hidden">Instagram htmlacademy</span>
+              <img class="social__logo-instagram social__logo-instagram--mobile"
+                src="./img/icons/footer-instagram--mobile.svg" width="16" height="16" alt="Instagram footer logo">
+              <img class="social__logo-instagram social__logo-instagram--tablet"
+                src="./img/icons/icon_instagram--tablet.svg" width="23" height="23" alt="Instagram footer logo">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--mobile" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Facebook htmlacademy</span>
+              <img class="social__logo-facebook social__logo-facebook--mobile"
+                src="./img/icons/footer-facebook--mobile.svg" width="22" height="22" alt="Facebook footer logo">
+              <img class="social__logo-facebook social__logo-facebook--tablet"
+                src="./img/icons/icon_facebook--tablet.svg" width="28" height="33" alt="Facebook footer logo">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright copyright">
+        <h2 class="copyright__title">HTML Academy</h2>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">разработано htmlacademy</span>
+          <img class="copyright__logo" src="./img/icons/footer-htmlacademy--mobile.svg" width="27" height="34"
+            alt="htmlacademy footer logo">
+        </a>
+      </div>
     </div>
   </footer>
 </body>

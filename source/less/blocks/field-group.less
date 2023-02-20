@@ -1,3 +1,9 @@
+.field {
+  &--textarea {
+    padding: 37px 0 0 0;
+  }
+}
+
 .field-group {
   padding: 0;
   border: none;
@@ -10,6 +16,12 @@
     height: 1px;
     left: -21px;
     border-bottom: 1px solid #d9d9d9;
+  }
+
+  &--contacts {
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -47,14 +59,49 @@
   &--advice {
     padding: 0 0 22px 45px;
   }
+
+  &--email {
+    padding: 0 0 14px 0;
+  }
+
+  &--phone {
+    padding: 0 0 24px 0;
+  }
 }
 
 .field-group__heading {
+  position: relative;
   font-family: @font;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: @black;
+
+  &--contacts {
+    padding: 27px 0 35px 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 99px;
+      height: 2px;
+      background-color: @green;
+      top: 43px;
+      right: -20px;
+    }
+  }
+
+  &--comment {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 158px;
+      height: 2px;
+      background-color: #68b738;
+      top: 20px;
+      left: 142px;
+    }
+  }
 }
 
 .field-group__item input[type="radio"]:checked + .control__radiobutton::after {
