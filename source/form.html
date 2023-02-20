@@ -141,7 +141,7 @@
         </fieldset>
 
 
-        <div class="form__group field-group">
+        <div class="form__group field-group field-group--comment">
           <label class="field-group__heading field-group__heading--comment" for="comment">Комментарий</label>
           <div class="field field--textarea">
             <textarea class="field__input field__input--textarea" name="comment" id="comment" rows="5"
@@ -150,31 +150,35 @@
         </div>
 
 
-        <fieldset class="form__group field-group">
-          <legend class="field-group__heading">Дополнительно</legend>
-          <ul class="field-group__list">
-            <li class="field-group__item">
+        <fieldset class="form__group field-group field-group--additionally">
+          <legend class="field-group__heading field-group__heading--additionally">Дополнительно</legend>
+          <ul class="field-group__list field-group__list--checkbox">
+            <li class="field-group__item field-group__item--checkbox">
               <label class="field-group__control control control--checkbox">
-                <input class="control__input" type="checkbox" name="additional" value="sweetener">
-                <span class="control__line">Сахарозаменитель</span>
+                <input class="control__input visually-hidden" type="checkbox" name="additional" value="sweetener">
+                <span class="control__icon"></span>
+                <span class="control__line control__line--checkbox">Сахарозаменитель</span>
               </label>
             </li>
-            <li class="field-group__item">
+            <li class="field-group__item field-group__item--checkbox">
               <label class="field-group__control control control--checkbox">
-                <input class="control__input" type="checkbox" name="additional" value="water">
-                <span class="control__line">Питьевая вода</span>
+                <input class="control__input visually-hidden" type="checkbox" name="additional" value="water">
+                <span class="control__icon"></span>
+                <span class="control__line control__line--checkbox">Питьевая вода</span>
               </label>
             </li>
-            <li class="field-group__item">
+            <li class="field-group__item field-group__item--checkbox">
               <label class="field-group__control control control--checkbox">
-                <input class="control__input" type="checkbox" name="additional" value="milk">
-                <span class="control__line">Молоко</span>
+                <input class="control__input visually-hidden" type="checkbox" name="additional" value="milk">
+                <span class="control__icon"></span>
+                <span class="control__line control__line--checkbox">Молоко</span>
               </label>
             </li>
-            <li class="field-group__item">
+            <li class="field-group__item field-group__item--checkbox">
               <label class="field-group__control control control--checkbox">
-                <input class="control__input" type="checkbox" name="additional" value="vitamins">
-                <span class="control__line">Витамины</span>
+                <input class="control__input visually-hidden" type="checkbox" name="additional" value="vitamins">
+                <span class="control__icon"></span>
+                <span class="control__line control__line--checkbox">Витамины</span>
               </label>
             </li>
           </ul>
@@ -183,12 +187,18 @@
         <p class="form__footnote">* — Обязательные поля</p>
       </form>
     </section>
-    <footer class="main__footer cooperation">
-      <h2 class="visually-hidden">Контакты</h2>
-      <p class="cooperation__title">Приглашаем к сотрудничеству дилеров!</p>
-      <p class="cooperation__street">ул. Большая Конюшенная, д. 19/8</p>
-      <p class="cooperation__city">Санкт-Петербург</p>
-      <img class="cooperation__image" src="./img/map.png" width="320" height="362" alt="Место располажения Cat-energy">
+    <footer class="main__footer cooperation cooperation--form">
+      <div class="cooperation__container container">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="cooperation__title">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="cooperation__street">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <img class="cooperation__image cooperation__image--mobile" src="./img/map.png" width="320" height="362"
+        alt="Место располажения Cat-energy">
+      <img class="cooperation__image cooperation__image--tablet" src="./img/tablet/map-tablet.jpg" width="768"
+        height="400" alt="Место располажения Cat-energy">
+      <img class="cooperation__image cooperation__image--desktop" src="./img/desktop/map--desktop.jpg" width="1440"
+        height="400" alt="Место располажения Cat-energy">
     </footer>
   </main>
   <footer class="page__footer footer">

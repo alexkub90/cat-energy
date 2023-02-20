@@ -23,6 +23,20 @@
       display: none;
     }
   }
+
+  &--comment {
+    padding: 0 0 20px 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &--additionally {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .field-group__control {
@@ -36,6 +50,13 @@
 
   &--cat {
     padding: 0 0 23px 0;
+  }
+
+  &--checkbox {
+    display: grid;
+    grid-template-rows: repeat(4, 30px);
+    row-gap: 12px;
+    padding: 0 0 29px 0;
   }
 }
 
@@ -66,6 +87,11 @@
 
   &--phone {
     padding: 0 0 24px 0;
+  }
+
+  &--checkbox {
+    min-height: 30px;
+    padding: 0 0 0 0;
   }
 }
 
@@ -100,6 +126,20 @@
       background-color: #68b738;
       top: 20px;
       left: 142px;
+    }
+  }
+
+  &--additionally {
+    padding: 0 0 40px 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 136px;
+      height: 2px;
+      background-color: #68b738;
+      top: 15px;
+      left: 164px;
     }
   }
 }
