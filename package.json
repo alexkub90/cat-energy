@@ -13,7 +13,7 @@
     "postcss": "8.3.11",
     "postcss-less": "^6.0.0",
     "stylelint": "^15.0.0",
-    "stylelint-config-htmlacademy": "^0.1.11"
+    "stylelint-config-htmlacademy": "^0.1.12"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -40,5 +40,8 @@
   "engines": {
     "node": "^16"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "linthtml-config-htmlacademy": "^1.0.3"
+  }
 }
