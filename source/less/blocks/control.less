@@ -3,6 +3,10 @@
     display: grid;
     align-items: center;
     min-height: 30px;
+
+    @media (min-width: @tablet-width) {
+      min-height: 40px;
+    }
   }
 }
 
@@ -14,8 +18,18 @@
   color: @dark-grey-2;
   text-transform: uppercase;
 
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0 0 0 44px;
+  }
+
   &--checkbox {
     padding: 0 0 0 46px;
+
+    @media (min-width: @tablet-width) {
+      padding: 0 0 0 60px;
+    }
   }
 }
 
@@ -29,6 +43,18 @@
   background-color: #ffffff;
   border-radius: 50%;
   border: 1px solid #cdcdcd;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    content: "";
+    top: -13px;
+    left: -16px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #cdcdcd;
+  }
 }
 
 .control__icon {
@@ -37,6 +63,11 @@
   width: 30px;
   height: 30px;
   border: 1px solid @pale-grey-3;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .control__input[type="checkbox"]:checked + .control__icon {
@@ -47,4 +78,10 @@
   background-image: url("../img/icons/check-green.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/icons/check-green--tablet.svg");
+  }
 }

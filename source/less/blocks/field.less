@@ -1,6 +1,10 @@
 .field {
   &--textarea {
     padding: 37px 0 0 0;
+
+    @media (min-width: @tablet-width) {
+      padding: 75px 0 0 0;
+    }
   }
 }
 
@@ -15,26 +19,7 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-  }
-
-  &--name {
-    padding: 0 10px 0 0;
-  }
-
-  &--weight {
-    padding: 0 13px 0 0;
-  }
-
-  &--age {
-    padding: 0 11px 0 0;
-  }
-
-  &--email {
-    padding: 0 7px 0 0;
-  }
-
-  &--phone {
-    padding-right: 6px;
+    padding: 0;
   }
 }
 
@@ -47,47 +32,80 @@
   color: @dark-grey;
   border: 1px solid @pale-grey-2;
   min-height: 45px;
+  padding: 0 0 0 15px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
     min-height: 52px;
+    padding-left: 18px;
   }
 
   &--name {
     min-width: 229px;
-    padding: 0 0 0 14px;
+    margin-left: 10px;
 
     @media (min-width: @tablet-width) {
       min-width: 567px;
+      margin-left: 13px;
     }
   }
 
   &--weight {
     min-width: 204px;
-    padding: 0 0 0 15px;
+    margin-left: 13px;
+
+    @media (min-width: @tablet-width) {
+      min-width: 536px;
+      margin-left: 16px;
+    }
   }
 
   &--age {
     min-width: 172px;
-    padding: 0 0 0 15px;
+    margin-left: 11px;
+
+    @media (min-width: @tablet-width) {
+      min-width: 497px;
+      margin-left: 13px;
+    }
   }
 
   &--email {
     position: relative;
     min-width: 219px;
     padding: 0 0 0 15px;
+    margin-left: 7px;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 16px;
+      min-width: 551px;
+      padding: 0 0 0 22px;
+    }
   }
 
   &--phone {
     min-width: 204px;
     padding: 0 0 0 15px;
+    margin-left: 6px;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 11px;
+      min-width: 535px;
+      padding: 0 0 0 20px;
+    }
   }
 
   &--textarea {
     min-width: 280px;
     min-height: 150px;
     padding: 9px 0 0 14px;
+
+    @media (min-width: @tablet-width) {
+      min-width: 631px;
+      min-height: 174px;
+      padding: 10px 0 0 19px;
+    }
   }
 }
 
@@ -96,11 +114,21 @@
     position: absolute;
     top: 16px;
     right: 15px;
+
+    @media (min-width: @tablet-width) {
+      top: 59px;
+      right: 18px;
+    }
   }
 
   &--phone {
     position: absolute;
     bottom: 35px;
     right: 13px;
+
+    @media (min-width: @tablet-width) {
+      right: 17px;
+      bottom: 80px;
+    }
   }
 }
