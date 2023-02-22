@@ -2,6 +2,10 @@
 .cooperation {
   margin-bottom: -3px;
 
+   @media (min-width: @desktop-width) {
+    position: relative;
+   }
+
   &--form {
     background-color: @light-grey;
   }
@@ -20,14 +24,15 @@
   }
 
   @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr;
     position: absolute;
+    top: 50px;
+    left: 110px;
     max-width: 565px;
-    min-height: 198px;
+    height: 198px;
     background-color: #ffffff;
     z-index: 1;
-    margin-top: 95px;
-    margin-left: 110px;
-    column-gap: 119px;
+    column-gap: 91px;
     padding: 58px 40px 60px 40px;
   }
 
