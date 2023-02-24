@@ -36,6 +36,12 @@
     color: @white;
     padding: 19px 0 13px 0;
   }
+
+  &--form {
+    @media (min-width: @desktop-width) {
+      color: @almost-black;
+    }
+  }
 }
 
 .site-menu__item {
@@ -100,8 +106,10 @@
       }
 
       @media (min-width: @desktop-width) {
-        width: 68px;
+        width: 169px;
         bottom: 5px;
+        top: 55px;
+        left: 1px;
       }
     }
   }
