@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>Каталог Cat energy</title>
 </head>
@@ -10,30 +11,42 @@
 <body class="page__body">
   <header class="page__header header">
     <nav class="header__nav nav">
-      <a class="header__logo logo" href="index.html">
-        <span class="visually-hidden">Главная</span>
-        <img class="logo__img logo__img--mobile" src="img/logo-mobile.svg" width="34" height="38" alt="main-logo">
-        <img class="logo__title logo__title--mobile" src="img/logo-title.svg" width="101" height="18"
-          alt="Cat energy title">
-      </a>
-      <button class="header__toggler" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <div class="header__bar">
+        <a class="header__logo logo" href="index.html">
+          <span class="visually-hidden">Главная</span>
+          <img class="logo__img logo__img--mobile" src="img/logo-mobile.svg" width="34" height="38"
+            alt="Логотип Cat-energy">
+          <img class="logo__title logo__title--mobile" src="img/logo-title.svg" width="101" height="18"
+            alt="Логотип Cat-energy">
+          <img class="logo__img logo__img--tablet" src="img/logo-tablet.svg" width="174" height="52"
+            alt="Логотип Cat-energy">
+          <img class="logo__img logo__img--desktop" src="img/logo-desktop.svg" width="202" height="59"
+            alt="Логотип Cat-energy">
+        </a>
+        <button class="header__toggler" type="button">
+          <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5" />
+            <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5" />
+            <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5" />
+          </svg>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
       <ul class="header__menu site-menu">
         <li class="site-menu__item site-menu__item">
-          <a class="site-menu__link" href="index.html">
+          <a class="site-menu__link site-menu__link--form" href="index.html">
             <span class="visually-hidden">Главная</span>
             Главная
           </a>
         </li>
-        <li class="site-menu__item site-menu__item--current">
-          <a class="site-menu__link" href="catalog.html">
+        <li class="site-menu__item site-menu__item">
+          <a class="site-menu__link site-menu__link--form" href="catalog.html">
             <span class="visually-hidden">Каталог продукции</span>
             Каталог продукции
           </a>
         </li>
-        <li class="site-menu__item site-menu__item">
-          <a class="site-menu__link" href="form.html">
+        <li class="site-menu__item site-menu__item--current-form">
+          <a class="site-menu__link site-menu__link--form" href="form.html">
             <span class="visually-hidden">Подбор программы</span>
             Подбор программы
           </a>
@@ -243,53 +256,67 @@
         <p class="promo-gift__descriptoin">Закажите все и получите чехол для кота в подарок!</p>
       </div>
     </section>
-    <footer class="main__footer cooperation">
-      <h2 class="visually-hidden">Контакты</h2>
-      <p class="cooperation__title">Приглашаем к сотрудничеству дилеров!</p>
-      <p class="cooperation__street">ул. Большая Конюшенная, д. 19/8</p>
-      <p class="cooperation__city">Санкт-Петербург</p>
-      <img class="cooperation__image" src="./img/map.png" width="320" height="362" alt="Место располажения Cat-energy">
+    <footer class="main__footer cooperation cooperation--form">
+      <div class="cooperation__container cooperation__container--form container">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="cooperation__title">Приглашаем<br> к сотрудничеству дилеров!</p>
+        <p class="cooperation__street">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <img class="cooperation__image cooperation__image--mobile" src="./img/map.png" width="320" height="362"
+        alt="Место располажения Cat-energy">
+      <img class="cooperation__image cooperation__image--tablet" src="./img/tablet/map-tablet.jpg" width="768"
+        height="400" alt="Место располажения Cat-energy">
+      <img class="cooperation__image cooperation__image--desktop" src="./img/desktop/map--desktop.jpg" width="1440"
+        height="400" alt="Место располажения Cat-energy">
     </footer>
   </main>
 
   <footer class="page__footer footer">
-    <a class="footer__link" href="index.html">
-      <span class="visually-hidden">Главная</span>
-      <img class="footer__logo footer__logo--mobile" src="./img/footer-logo--mobile.svg" width="128" height="24"
-        alt="Cat energy footer-logo title">
-    </a>
-    <div class="footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">VK htmlacademy</span>
-            <img class="social__logo-vk social__logo-vk--mobile" src="./img/footer-vkontakte--mobile.svg" width="23"
-              height="16" alt="Vk footer logo">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--mobile" href="#">
-            <span class="visually-hidden">Instagram htmlacademy</span>
-            <img class="social__logo-instagram social__logo-instagram--mobile" src="./img/footer-instagram--mobile.svg"
-              width="16" height="16" alt="Instagram footer logo">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--mobile" href="https://www.facebook.com/htmlacademy">
-            <span class="visually-hidden">Facebook htmlacademy</span>
-            <img class="social__logo-facebook social__logo-facebook--mobile" src="./img/footer-facebook--mobile.svg"
-              width="22" height="22" alt="Facebook footer logo">
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer__copyright copyright">
-      <h2 class="copyright__title">HTML Academy</h2>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="visually-hidden">разработано htmlacademy</span>
-        <img class="copyright__logo" src="./img/footer-htmlacademy--mobile.svg" width="27" height="34"
-          alt="htmlacademy footer logo">
+    <div class="footer__container container">
+      <a class="footer__link" href="index.html">
+        <span class="visually-hidden">Главная</span>
+        <img class="footer__logo footer__logo--mobile" src="./img/icons/footer-logo--mobile.svg" width="128" height="24"
+          alt="Cat energy footer-logo title">
       </a>
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">VK htmlacademy</span>
+              <img class="social__logo-vk social__logo-vk--mobile" src="./img/icons/footer-vkontakte--mobile.svg"
+                width="23" height="16" alt="Vk footer logo">
+              <img class="social__logo-vk social__logo-vk--tablet" src="./img/icons/icon_vkontakte--tablet.svg"
+                width="30" height="22" alt="Vk footer logo">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--mobile" href="#">
+              <span class="visually-hidden">Instagram htmlacademy</span>
+              <img class="social__logo-instagram social__logo-instagram--mobile"
+                src="./img/icons/footer-instagram--mobile.svg" width="16" height="16" alt="Instagram footer logo">
+              <img class="social__logo-instagram social__logo-instagram--tablet"
+                src="./img/icons/icon_instagram--tablet.svg" width="23" height="23" alt="Instagram footer logo">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--mobile" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Facebook htmlacademy</span>
+              <img class="social__logo-facebook social__logo-facebook--mobile"
+                src="./img/icons/footer-facebook--mobile.svg" width="22" height="22" alt="Facebook footer logo">
+              <img class="social__logo-facebook social__logo-facebook--tablet"
+                src="./img/icons/icon_facebook--tablet.svg" width="28" height="33" alt="Facebook footer logo">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright copyright">
+        <h2 class="copyright__title">HTML Academy</h2>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">разработано htmlacademy</span>
+          <img class="copyright__logo" src="./img/icons/footer-htmlacademy--mobile.svg" width="27" height="34"
+            alt="htmlacademy footer logo">
+        </a>
+      </div>
     </div>
   </footer>
 </body>
