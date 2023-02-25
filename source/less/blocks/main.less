@@ -21,6 +21,25 @@
     grid-column: 1/2;
     grid-row: 1/2;
   }
+
+  &--catalog {
+    @media (max-width: @mobile-width-only) {
+      position: relative;
+      padding-top: 25px;
+      margin-bottom: 38px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 766px;
+        height: 1px;
+        background-color: @pale-grey-4;
+        top: 103px;
+        right: -243px;
+      }
+    }
+
+  }
 }
 
 .main__description {
