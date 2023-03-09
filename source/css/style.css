@@ -224,6 +224,11 @@ img {
     right: -243px;
   }
 }
+@media (min-width: 768px) {
+  .main__title--catalog {
+    padding-top: 41px;
+  }
+}
 .main__description {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
