@@ -113,4 +113,26 @@
       }
     }
   }
+
+  &--current-catalog {
+    &::after {
+      @media (min-width: @tablet-width) {
+        position: absolute;
+        content: "";
+        background-color: #68b738;
+        width: 154px;
+        height: 2px;
+        bottom: 3px;
+        right: 0;
+        left: -1px;
+      }
+
+      @media (min-width: @desktop-width) {
+        width: 169px;
+        bottom: 5px;
+        top: 55px;
+        left: 1px;
+      }
+    }
+  }
 }
