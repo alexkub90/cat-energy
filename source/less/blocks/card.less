@@ -5,6 +5,8 @@
 
   @media (min-width: @tablet-width) {
     grid-template-rows: 200px max-content max-content max-content;
+    height: 503px;
+    background: linear-gradient(left, @light-grey) no-repeat 50px 50px;
   }
 }
 
@@ -21,8 +23,7 @@
     grid-column: 1/-1;
     grid-row: 2/3;
     width: 126px;
-    margin: 0 auto 0 auto;
-
+    margin: 34px auto 28px auto;
   }
 }
 
@@ -52,8 +53,12 @@
   margin: 0 0 22px 0;
 
   @media (min-width: @tablet-width) {
+    grid-template-columns: 48px 54px;
+    column-gap: 147px;
+    row-gap: 16px;
     grid-column: 1/-1;
     grid-row: 3/4;
+    margin: 0 auto 41px auto;
   }
 }
 
