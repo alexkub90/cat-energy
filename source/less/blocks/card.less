@@ -5,8 +5,17 @@
 
   @media (min-width: @tablet-width) {
     grid-template-rows: 200px max-content max-content max-content;
-    height: 503px;
-    background: linear-gradient(left, @light-grey) no-repeat 50px 50px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: @light-grey;
+      height: 430px;
+      width: 324px;
+      top: 73px;
+      z-index: -1;
+    }
   }
 }
 
@@ -95,19 +104,21 @@
   grid-row: 1/3;
   margin: auto;
 
-  @media (min-width: @tablet-width) {
-    grid-column: 1/-1;
-    grid-row: 1/2;
-  }
-
   &--tablet,
   &--desktop {
     display: none;
   }
 
   @media (min-width: @tablet-width) {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+
     &--tablet {
       display: block;
+
+      &--small {
+        margin-top: 26px;
+      }
     }
 
     &--mobile,
