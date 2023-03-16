@@ -1531,6 +1531,20 @@ img {
   top: 41px;
   left: 247px;
 }
+@media (min-width: 768px) {
+  .catalog-additional__title::after {
+    min-width: 328px;
+    top: 59px;
+    left: 411px;
+  }
+}
+@media (min-width: 768px) {
+  .catalog-additional__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 35px 0 35px 37px;
+  }
+}
 .catalog-additional__list {
   display: grid;
   grid-template-columns: 1fr;
