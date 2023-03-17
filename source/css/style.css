@@ -1534,7 +1534,7 @@ img {
 @media (min-width: 768px) {
   .catalog-additional__title::after {
     min-width: 328px;
-    top: 59px;
+    top: 22px;
     left: 411px;
   }
 }
@@ -1542,7 +1542,19 @@ img {
   .catalog-additional__title {
     font-size: 36px;
     line-height: 36px;
-    padding: 35px 0 35px 37px;
+    padding: 0;
+    padding-left: 37px;
+    margin-top: 37px;
+    margin-bottom: 81px;
+  }
+  .catalog-additional__title::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #68b738;
+    top: 22px;
+    left: -30px;
   }
 }
 .catalog-additional__list {
@@ -1554,11 +1566,23 @@ img {
   margin-bottom: 35px;
   list-style: none;
 }
+@media (min-width: 768px) {
+  .catalog-additional__list {
+    grid-template-rows: repeat(4, 139px);
+  }
+}
 .catalog-additional__item {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, max-content);
   border-top: 1px solid #cdcdcd;
+}
+@media (min-width: 768px) {
+  .catalog-additional__item {
+    grid-template-rows: max-content 40px;
+    padding: 25px 38px 20px 38px;
+    row-gap: 24px;
+  }
 }
 .catalog-additional__item:last-child {
   border-bottom: 1px solid #cdcdcd;
@@ -1575,6 +1599,15 @@ img {
   grid-row: 1/2;
   padding: 13px 0 0 0;
 }
+@media (min-width: 768px) {
+  .card-optional__header {
+    font-size: 20px;
+    line-height: 20px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 0;
+  }
+}
 .card-optional__specification {
   grid-column: 1/-1;
   grid-row: 2/3;
@@ -1587,6 +1620,24 @@ img {
   color: #444444;
   margin: 13px 0 13px 0;
 }
+@media (min-width: 768px) {
+  .card-optional__specification {
+    display: grid;
+    grid-template-columns: 132px 44px;
+    justify-content: end;
+    column-gap: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    grid-column: 2/-1;
+    grid-row: 1/2;
+    margin: 0;
+  }
+}
+@media (min-width: 768px) {
+  .card-optional__definition {
+    margin: 0;
+  }
+}
 .card-optional__button {
   width: 100%;
   grid-column: 1/-1;
@@ -1594,6 +1645,12 @@ img {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .card-optional__button {
+    grid-row: 2/-1;
+    padding: 10px 26px;
+  }
 }
 .promo-gift {
   padding: 59px 59px 41px;

@@ -9,6 +9,15 @@
   grid-column: 1/2;
   grid-row: 1/2;
   padding: 13px 0 0 0;
+
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 0;
+  }
 }
 
 .card-optional__specification {
@@ -22,6 +31,24 @@
   line-height: 14px;
   color: @dark-grey;
   margin: 13px 0 13px 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 132px 44px;
+    justify-content: end;
+    column-gap: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    grid-column: 2/-1;
+    grid-row: 1/2;
+    margin: 0;
+  }
+}
+
+.card-optional__definition {
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .card-optional__button {
@@ -31,4 +58,9 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    grid-row: 2/-1;
+    padding: 10px 26px;
+  }
 }
