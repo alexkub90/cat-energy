@@ -1581,7 +1581,9 @@ img {
   .catalog-additional__item {
     grid-template-rows: max-content 40px;
     padding: 25px 38px 20px 38px;
-    row-gap: 24px;
+    row-gap: 22px;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
   }
 }
 .catalog-additional__item:last-child {
@@ -1625,17 +1627,19 @@ img {
     display: grid;
     grid-template-columns: 132px 44px;
     justify-content: end;
-    column-gap: 10px;
+    column-gap: 48px;
     font-size: 16px;
     line-height: 20px;
     grid-column: 2/-1;
     grid-row: 1/2;
     margin: 0;
+    padding-top: 2px;
   }
 }
 @media (min-width: 768px) {
   .card-optional__definition {
     margin: 0;
+    text-align: right;
   }
 }
 .card-optional__button {
