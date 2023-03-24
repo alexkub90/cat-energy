@@ -1,11 +1,23 @@
 .promo-gift {
   padding: 59px 59px 41px;
   background-image: url("../img/backgrounds/background-optional.jpg");
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding: 57px 0 63px 0;
+    background-image: url("..//img/backgrounds/background-optional--tablet.png");
+  }
 }
 
 .promo-gift__image {
   display: block;
   margin: auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-left: 79px;
+    margin-right: 267px;
+  }
 }
 
 .promo-gift__descriptoin {
@@ -17,4 +29,10 @@
   text-align: center;
   margin: 0;
   margin-top: 50px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    text-align: left;
+    padding-top: 14px;
+  }
 }
