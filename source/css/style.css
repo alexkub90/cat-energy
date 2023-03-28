@@ -217,16 +217,21 @@ img {
   .main__title--catalog::after {
     position: absolute;
     content: "";
-    width: 766px;
+    width: 320px;
     height: 1px;
     background-color: #ebebeb;
     top: 103px;
-    right: -243px;
+    left: -20px;
   }
 }
 @media (min-width: 768px) {
   .main__title--catalog {
     padding-top: 41px;
+  }
+}
+@media (min-width: 1300px) {
+  .main__title--catalog {
+    padding-top: 51px;
   }
 }
 .main__description {
@@ -281,6 +286,11 @@ img {
 }
 @media (min-width: 1300px) {
   .site-menu__link--form {
+    color: #111111;
+  }
+}
+@media (min-width: 1300px) {
+  .site-menu__link--catalog {
     color: #111111;
   }
 }
@@ -1277,6 +1287,12 @@ img {
     grid-template-rows: repeat(4, 511px);
     gap: 60px;
     padding-top: 89px;
+  }
+}
+@media (min-width: 1300px) {
+  .catalog-list__container {
+    grid-template-columns: repeat(4, 245px);
+    grid-template-rows: 1fr 1fr;
   }
 }
 .card {
