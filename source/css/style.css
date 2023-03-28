@@ -968,6 +968,7 @@ img {
   .example {
     background-color: #ffffff;
     position: relative;
+    margin-bottom: 47px;
   }
 }
 @media (min-width: 768px) {
@@ -1191,7 +1192,6 @@ img {
   .cooperation__container {
     grid-template-columns: 171px 160px;
     column-gap: 297px;
-    margin-top: 46px;
     padding: 61px 40px 60px 40px;
   }
 }
@@ -1528,6 +1528,12 @@ img {
 .catalog-additional__container {
   padding-bottom: 35px;
 }
+@media (min-width: 768px) {
+  .catalog-additional__container {
+    padding: 0;
+    margin-bottom: 75px;
+  }
+}
 .catalog-additional__title {
   position: relative;
   font-family: "Oswald", "Arial", sans-serif;
@@ -1585,6 +1591,7 @@ img {
 @media (min-width: 768px) {
   .catalog-additional__list {
     grid-template-rows: repeat(4, 139px);
+    margin-bottom: 68px;
   }
 }
 .catalog-additional__item {
@@ -1676,9 +1683,23 @@ img {
   padding: 59px 59px 41px;
   background-image: url("../img/backgrounds/background-optional.jpg");
 }
+@media (min-width: 768px) {
+  .promo-gift {
+    display: flex;
+    padding: 57px 0 63px 0;
+    background-image: url("..//img/backgrounds/background-optional--tablet.png");
+  }
+}
 .promo-gift__image {
   display: block;
   margin: auto;
+}
+@media (min-width: 768px) {
+  .promo-gift__image {
+    margin: 0;
+    margin-left: 79px;
+    margin-right: 267px;
+  }
 }
 .promo-gift__descriptoin {
   font-family: "Arial", sans-serif;
@@ -1689,6 +1710,13 @@ img {
   text-align: center;
   margin: 0;
   margin-top: 50px;
+}
+@media (min-width: 768px) {
+  .promo-gift__descriptoin {
+    margin: 0;
+    text-align: left;
+    padding-top: 14px;
+  }
 }
 .footer {
   background-color: #f2f2f2;
