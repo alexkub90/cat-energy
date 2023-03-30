@@ -15,6 +15,12 @@
       width: 324px;
       top: 73px;
       z-index: -1;
+
+      @media (min-width: @desktop-width) {
+        height: 431px;
+        width: 245px;
+        top: 76px;
+      }
     }
   }
 }
@@ -68,6 +74,11 @@
     grid-column: 1/-1;
     grid-row: 3/4;
     margin: 0 auto 41px auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    column-gap: 63px;
+    row-gap: 18px;
   }
 }
 
@@ -130,6 +141,11 @@
   @media (min-width: @desktop-width) {
     &--desktop {
       display: block;
+      margin-top: -4px;
+
+      &--small {
+        margin-top: 24px;
+      }
     }
 
     &--mobile,
@@ -152,5 +168,9 @@
     grid-row: 4/-1;
     width: 248px;
     margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
   }
 }
