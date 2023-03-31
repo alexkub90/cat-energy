@@ -1599,6 +1599,13 @@ img {
     left: 411px;
   }
 }
+@media (min-width: 1300px) {
+  .catalog-additional__title::after {
+    min-width: 956px;
+    top: 22px;
+    left: 373px;
+  }
+}
 @media (min-width: 768px) {
   .catalog-additional__title {
     font-size: 36px;
@@ -1618,6 +1625,17 @@ img {
     left: -30px;
   }
 }
+@media (min-width: 1300px) {
+  .catalog-additional__title {
+    margin-top: 57px;
+    padding-left: 0;
+  }
+  .catalog-additional__title::before {
+    width: 69px;
+    top: 23px;
+    left: -110px;
+  }
+}
 .catalog-additional__list {
   display: grid;
   grid-template-columns: 1fr;
@@ -1633,6 +1651,12 @@ img {
     margin-bottom: 68px;
   }
 }
+@media (min-width: 1300px) {
+  .catalog-additional__list {
+    grid-template-rows: repeat(4, 72px);
+    max-width: 896px;
+  }
+}
 .catalog-additional__item {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1646,6 +1670,16 @@ img {
     row-gap: 22px;
     border-left: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
+  }
+}
+@media (min-width: 1300px) {
+  .catalog-additional__item {
+    grid-template-rows: 1fr;
+    grid-template-columns: 161px 288px 244px;
+    padding: 14px 0 16px 0;
+    column-gap: 101px;
+    border-left: none;
+    border-right: none;
   }
 }
 .catalog-additional__item:last-child {
@@ -1670,6 +1704,11 @@ img {
     grid-column: 1/2;
     grid-row: 1/2;
     padding: 0;
+  }
+}
+@media (min-width: 1300px) {
+  .card-optional__header {
+    padding-top: 9px;
   }
 }
 .card-optional__specification {
@@ -1698,10 +1737,25 @@ img {
     padding-top: 2px;
   }
 }
+@media (min-width: 1300px) {
+  .card-optional__specification {
+    display: grid;
+    padding-top: 14px;
+    padding-left: 63px;
+    column-gap: 110px;
+    grid-column: 2/3;
+    justify-content: normal;
+  }
+}
 @media (min-width: 768px) {
   .card-optional__definition {
     margin: 0;
     text-align: right;
+  }
+}
+@media (min-width: 1300px) {
+  .card-optional__definition {
+    text-align: left;
   }
 }
 .card-optional__button {
@@ -1716,6 +1770,13 @@ img {
   .card-optional__button {
     grid-row: 2/-1;
     padding: 10px 26px;
+  }
+}
+@media (min-width: 1300px) {
+  .card-optional__button {
+    width: 244px;
+    grid-row: 1/2;
+    grid-column: 3/4;
   }
 }
 .promo-gift {
