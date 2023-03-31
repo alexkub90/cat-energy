@@ -1573,6 +1573,15 @@ img {
     margin-bottom: 75px;
   }
 }
+@media (min-width: 1300px) {
+  .catalog-additional__container {
+    display: grid;
+    grid-template-rows: repeat(2, max-content);
+    grid-template-columns: 896px 245px;
+    column-gap: 79px;
+    margin-bottom: 18px;
+  }
+}
 .catalog-additional__title {
   position: relative;
   font-family: "Oswald", "Arial", sans-serif;
@@ -1629,6 +1638,8 @@ img {
   .catalog-additional__title {
     margin-top: 57px;
     padding-left: 0;
+    grid-column: 1/-1;
+    grid-row: 1/2;
   }
   .catalog-additional__title::before {
     width: 69px;
@@ -1790,6 +1801,13 @@ img {
     background-image: url("..//img/backgrounds/background-optional--tablet.png");
   }
 }
+@media (min-width: 1300px) {
+  .promo-gift {
+    height: 289px;
+    flex-direction: column;
+    padding: 57px 0 0 0;
+  }
+}
 .promo-gift__image {
   display: block;
   margin: auto;
@@ -1799,6 +1817,12 @@ img {
     margin: 0;
     margin-left: 79px;
     margin-right: 267px;
+  }
+}
+@media (min-width: 1300px) {
+  .promo-gift__image {
+    margin: 0 auto;
+    margin-bottom: 48px;
   }
 }
 .promo-gift__descriptoin {
@@ -1816,6 +1840,12 @@ img {
     margin: 0;
     text-align: left;
     padding-top: 14px;
+  }
+}
+@media (min-width: 1300px) {
+  .promo-gift__descriptoin {
+    padding: 0;
+    text-align: center;
   }
 }
 .footer {

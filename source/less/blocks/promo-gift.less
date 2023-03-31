@@ -7,6 +7,12 @@
     padding: 57px 0 63px 0;
     background-image: url("..//img/backgrounds/background-optional--tablet.png");
   }
+
+  @media (min-width: @desktop-width) {
+    height: 289px;
+    flex-direction: column;
+    padding: 57px 0 0 0;
+  }
 }
 
 .promo-gift__image {
@@ -18,6 +24,13 @@
     margin-left: 79px;
     margin-right: 267px;
   }
+
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    margin-bottom: 48px;
+  }
+
 }
 
 .promo-gift__descriptoin {
@@ -34,5 +47,10 @@
     margin: 0;
     text-align: left;
     padding-top: 14px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    text-align: center;
   }
 }
