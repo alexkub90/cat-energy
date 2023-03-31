@@ -971,6 +971,11 @@ img {
     margin-bottom: 47px;
   }
 }
+@media (min-width: 1300px) {
+  .example {
+    margin-bottom: 0;
+  }
+}
 @media (min-width: 768px) {
   .example::after {
     content: "";
@@ -1197,6 +1202,7 @@ img {
 }
 @media (min-width: 1300px) {
   .cooperation__container {
+    margin-top: 45px;
     grid-template-columns: 1fr 1fr;
     position: absolute;
     top: 50px;
